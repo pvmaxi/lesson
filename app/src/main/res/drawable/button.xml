@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <solid android:color="#ffffff" />
+            <stroke android:width="0.5dp"/>
+        </shape>
+        <patch android:pathData="m56,77C69.255,77 80,66.255 80,53C80,39.745 69.255,29 56,29C42.745,29 32,39.745 32,53C32,66.255 42.745,77 56,77Z"
+            android:fillColor="#000000"
+            android:fillType="evenOdd"/>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#7a7a7a" />
+            <stroke android:width="0.5dp"/>
+        </shape>
+    </item>
+</selector>
+
