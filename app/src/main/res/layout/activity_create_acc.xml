@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="MissingConstraints">
+    tools:ignore="MissingConstraints"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/create_acc_back"
@@ -55,23 +56,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create_acc_back" />
 
-    <TextView
+    <EditText
         android:id="@+id/create_acc_email"
-        android:gravity="center_vertical"
         android:layout_width="311dp"
         android:layout_height="48dp"
         android:layout_marginTop="35dp"
         android:background="@drawable/ic_rectangle_email_create_acc"
         android:fontFamily="@font/montserrat"
-        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:hint="\t\tEmail"
+        android:textColorHint="#4a4a4a"
         android:lineHeight="15sp"
-        android:text="\t\tEmail"
+        android:textColor="#000000"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <TextView
+    <EditText
         android:id="@+id/create_acc_password"
         android:layout_width="311dp"
         android:layout_height="48dp"
@@ -80,14 +83,15 @@
         android:fontFamily="@font/montserrat"
         android:gravity="center_vertical"
         android:lineHeight="15sp"
-        android:text="\t\tPassword (min. 12 characters)"
+        android:hint="\t\tPassword (min. 12 characters)"
+        android:textColorHint="#804a4a4a"
         android:textColor="#804A4A4A"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create_acc_email" />
 
-    <TextView
+    <EditText
         android:id="@+id/create_acc_password_confirm"
         android:layout_width="311dp"
         android:layout_height="48dp"
@@ -96,7 +100,8 @@
         android:fontFamily="@font/montserrat"
         android:gravity="center_vertical"
         android:lineHeight="15sp"
-        android:text="\t\tConfirm Password"
+        android:hint="\t\tConfirm Password"
+        android:textColorHint="#804a4a4a"
         android:textColor="#804A4A4A"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,6 +161,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"/>
 
     <TextView
+        android:id="@+id/move_to_interests"
         android:layout_width="311dp"
         android:layout_height="50dp"
         android:layout_marginBottom="12dp"

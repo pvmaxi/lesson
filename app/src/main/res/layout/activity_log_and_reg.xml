@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="MissingConstraints">
+    tools:ignore="MissingConstraints"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imageView8"
@@ -38,6 +39,7 @@
         android:hint="\t\tEMAIL"
         android:inputType="textEmailAddress"
         android:lineHeight="21dp"
+        android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
@@ -56,6 +58,7 @@
         android:hint="\t\tPASSWORD"
         android:inputType="textEmailAddress"
         android:lineHeight="21dp"
+        android:textColor="#000000"
         android:textColorHint="#000"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
