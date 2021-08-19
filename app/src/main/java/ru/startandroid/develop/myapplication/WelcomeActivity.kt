@@ -1,22 +1,34 @@
 package ru.startandroid.develop.myapplication
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import ru.startandroid.develop.myapplication.databinding.ActivityRegBinding
 
 class WelcomeActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityRegBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reg)
+        binding = ActivityRegBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        findViewById<TextView>(R.id.text_register).setOnClickListener {
+        binding.textRegister.setOnClickListener{
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
-        findViewById<TextView>(R.id.text_login).setOnClickListener {
+        binding.textLogin.setOnClickListener{
             startActivity(Intent(this, LoginActivity::class.java))
         }
+//        setContentView(R.layout.activity_reg)
+//
+//        findViewById<TextView>(R.id.text_register).setOnClickListener {
+//            startActivity(Intent(this, RegisterActivity::class.java))
+//        }
+//
+//        findViewById<TextView>(R.id.text_login).setOnClickListener {
+//            startActivity(Intent(this, LoginActivity::class.java))
+//        }
     }
 }
