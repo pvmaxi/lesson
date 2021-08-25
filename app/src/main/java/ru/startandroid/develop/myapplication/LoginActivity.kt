@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.ImageView
+import com.bumptech.glide.Glide
 import ru.startandroid.develop.myapplication.databinding.ActivityLogAndRegBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -19,10 +20,11 @@ class LoginActivity : AppCompatActivity() {
         binding.imageView3.setOnClickListener {
             startActivity(Intent(this, WelcomeActivity::class.java))
         }
-//        setContentView(R.layout.activity_log_and_reg)
-//
-//        findViewById<ImageView>(R.id.imageView3).setOnClickListener{
-//            startActivity(Intent(this, WelcomeActivity::class.java))
-//        }
+
+        binding.textView2.setOnClickListener {
+            startActivity(Intent(this, ListActivity::class.java))
+        }
+
+
     }
 }
