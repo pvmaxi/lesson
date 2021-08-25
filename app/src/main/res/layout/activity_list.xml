@@ -52,13 +52,21 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/userList"
-        tools:itemCount="3"
+        tools:itemCount="4"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_user"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_rectangle_menu">
+
+
+    </ImageView>
+
 </LinearLayout>

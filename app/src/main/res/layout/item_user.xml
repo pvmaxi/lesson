@@ -4,10 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_margin="15dp"
+    android:layout_marginLeft="21dp"
+    android:layout_marginTop="11dp"
+    android:layout_marginRight="21dp"
     android:layout_height="wrap_content"
     tools:ignore="MissingConstraints"
-    android:background="@color/white">
+    android:background="@drawable/ic_rectangle_background">
+
 
     <ImageView
         android:id="@+id/avatar"
@@ -41,6 +44,14 @@
 
         <TextView
             android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#000"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <TextView
+            android:id="@+id/from"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"

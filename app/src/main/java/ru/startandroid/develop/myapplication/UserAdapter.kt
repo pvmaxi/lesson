@@ -13,6 +13,7 @@ class UserAdapter(var users: List<User>) : RecyclerView.Adapter<UserAdapter.Hold
         fun bind(user: User) {
             binding.name.text = user.name
             binding.age.text = user.age.toString()
+            binding.from.text = user.from
         }
 
     }
@@ -33,5 +34,6 @@ class UserAdapter(var users: List<User>) : RecyclerView.Adapter<UserAdapter.Hold
 
 class User(
     var name: String = "Andrey",
-    var age: Int = 9
+    var age: Int = 9,
+    var from: String = "Ukraine",
 )

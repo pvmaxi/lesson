@@ -1,5 +1,6 @@
 package ru.startandroid.develop.myapplication
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
@@ -9,6 +10,7 @@ class ListActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityListBinding
 
+    @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityListBinding.inflate(layoutInflater)
