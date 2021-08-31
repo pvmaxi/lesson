@@ -80,6 +80,7 @@
             android:layout_height="15dp"
             android:layout_marginStart="244dp"
             android:layout_marginTop="96dp"
+            android:layout_marginEnd="28dp"
             android:fontFamily="@font/roboto"
             android:text="Filter by interests"
             android:textColor="#80555555"
@@ -92,9 +93,11 @@
             android:id="@+id/filter_interests"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="93dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="21dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/filter"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic__filter_interests" />
 
