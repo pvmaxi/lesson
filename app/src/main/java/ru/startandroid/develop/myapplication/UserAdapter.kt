@@ -1,7 +1,9 @@
 package ru.startandroid.develop.myapplication
 
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import ru.startandroid.develop.myapplication.databinding.ItemUserBinding
 
@@ -11,9 +13,9 @@ class UserAdapter(var users: List<User>) : RecyclerView.Adapter<UserAdapter.Hold
     class Holder(var binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(user: User) {
-            binding.name.text = user.name
-            binding.age.text = user.age.toString()
+            binding.title.text = user.title.toString()
             binding.from.text = user.from
+            binding.lastCheck.text = user.last.toString()
         }
 
     }
@@ -32,8 +34,12 @@ class UserAdapter(var users: List<User>) : RecyclerView.Adapter<UserAdapter.Hold
 
 }
 
+class ItemUserBinding {
+
+}
+
 class User(
-    var name: String = "Andrey",
-    var age: Int = 9,
-    var from: String = "Ukraine",
+    var title: Any = "Max, 24",
+    var from: String = "Ukraine, Avdeevka",
+    var last: Any = "Был(а) 2 минуты назад",
 )

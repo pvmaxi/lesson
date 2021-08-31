@@ -18,7 +18,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="23dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="4dp"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toStartOf="@+id/textView10"
@@ -32,10 +32,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/ic_polygon"
             android:gravity="center"
+            android:fontFamily="@font/anton"
             android:text="Find New Friends"
             android:textAllCaps="true"
             android:textColor="#000"
-            android:textSize="24sp"
+            android:textSize="35sp"
             app:layout_constraintEnd_toStartOf="@+id/logo"
             app:layout_constraintStart_toEndOf="@+id/ava" />
 
@@ -43,19 +44,68 @@
             android:id="@+id/logo"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="22dp"
             app:layout_constraintCircleRadius="20px"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_fz_icon"/>
+            app:srcCompat="@drawable/ic_fz_icon" />
+
+        <TextView
+            android:id="@+id/age_location"
+            android:layout_width="141dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/roboto"
+            android:text="Age and location"
+            android:textColor="#80555555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/maps_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="96dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_maps_and_flags__1__1"/>
+
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="103dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/roboto"
+            android:text="Filter by interests"
+            android:textColor="#80555555"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/filter_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="21dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic__filter_interests" />
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/userList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/age_location"
             tools:itemCount="4"
             tools:listitem="@layout/item_user" />
 

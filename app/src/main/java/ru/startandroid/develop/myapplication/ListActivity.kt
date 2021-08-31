@@ -19,6 +19,7 @@ class ListActivity : AppCompatActivity() {
         var users = listOf<User>(
             User(),
             User(),
+            User("Andrey, 25", "Ukraine, Donetsk"),
             User(),
             User(),
             User(),
@@ -26,8 +27,6 @@ class ListActivity : AppCompatActivity() {
             User(),
             User(),
             User(),
-            User(),
-
         )
 
         binding.userList.adapter = UserAdapter(users)
@@ -35,8 +34,7 @@ class ListActivity : AppCompatActivity() {
         Glide.with(this)
             .load("https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg")
             .circleCrop()
-            .placeholder(R.drawable.button)
-            .error(R.drawable.button)
-
+            .placeholder(R.drawable.ic_fz_icon)
+            .error(R.drawable.ic_fz_icon)
     }
 }
