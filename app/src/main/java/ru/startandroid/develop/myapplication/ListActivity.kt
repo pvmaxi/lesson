@@ -3,6 +3,7 @@ package ru.startandroid.develop.myapplication
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import com.bumptech.glide.Glide
 import ru.startandroid.develop.myapplication.databinding.ActivityListBinding
 
@@ -31,10 +32,13 @@ class ListActivity : AppCompatActivity() {
 
         binding.userList.adapter = UserAdapter(users)
 
+        val url = "https://kubnews.ru/upload/resize_cache/iblock/994/800_533_2/99475ea7123c9d8229f5674d202aa761.jpg"
+
+        val imageAva = binding.ava
+
         Glide.with(this)
-            .load("https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg")
+            .load (url)
             .circleCrop()
-            .placeholder(R.drawable.ic_fz_icon)
-            .error(R.drawable.ic_fz_icon)
+            .into(imageAva)
     }
 }

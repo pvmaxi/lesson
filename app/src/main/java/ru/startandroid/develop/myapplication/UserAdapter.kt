@@ -34,10 +34,6 @@ class UserAdapter(var users: List<User>) : RecyclerView.Adapter<UserAdapter.Hold
 
 }
 
-class ItemUserBinding {
-
-}
-
 class User(
     var title: Any = "Max, 24",
     var from: String = "Ukraine, Avdeevka",
